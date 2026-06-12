@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>포츈쿠키</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const scheme = params.get("scheme") || "fortunecookie";
+    const path = params.get("path") || "open";
+    const storeID = params.get("store");
+    const DEEP_LINK = `${scheme}://${path}`;
+    const APP_STORE_URL = storeID
+      ? `https://apps.apple.com/app/id${storeID}`
+      : "https://apps.apple.com/search?term=fortune%20cookie";
+
+    function openAppOrStore() {
+      const started = Date.now();
+      window.location.href = DEEP_LINK;
+
+      setTimeout(function () {
+        if (Date.now() - started < 1600) {
+          window.location.href = APP_STORE_URL;
+        }
+      }, 1200);
+    }
+
+    window.addEventListener("load", openAppOrStore);
+  </script>
+</head>
+<body>
+  <p>포츈쿠키 앱으로 이동 중이에요...</p>
+  <p><a href="#" onclick="openAppOrStore(); return false;">앱이 열리지 않으면 App Store에서 받기</a></p>
+</body>
+</html>

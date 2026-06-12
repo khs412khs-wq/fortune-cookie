@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC100001 /* FortuneCookieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200001 /* FortuneCookieApp.swift */; };
+		FC100002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200002 /* ContentView.swift */; };
+		FC100003 /* CookieBreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200003 /* CookieBreakView.swift */; };
+		FC100004 /* CookieShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200004 /* CookieShape.swift */; };
+		FC100005 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200005 /* SoundManager.swift */; };
+		FC100006 /* CookieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200006 /* CookieStore.swift */; };
+		FC100007 /* FortuneData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200007 /* FortuneData.swift */; };
+		FC100008 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200008 /* HapticManager.swift */; };
+		FC100009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC200009 /* Assets.xcassets */; };
+		FC10000A /* crack.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC20000A /* crack.wav */; };
+		FC10000B /* reveal.wav in Resources */ = {isa = PBXBuildFile; fileRef = FC20000B /* reveal.wav */; };
+		FC10002E /* rustling_sound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FC20002E /* rustling_sound.mp4 */; };
+		FC10000C /* FortuneCookieWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = FC300001 /* FortuneCookieWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC10000D /* FortuneCookieWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC20000D /* FortuneCookieWidgetBundle.swift */; };
+		FC10000E /* FortuneCookieWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC20000E /* FortuneCookieWidget.swift */; };
+		FC10000F /* BreakCookieIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC20000F /* BreakCookieIntent.swift */; };
+		FC100010 /* CookieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200006 /* CookieStore.swift */; };
+		FC100011 /* FortuneData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200007 /* FortuneData.swift */; };
+		FC100012 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200008 /* HapticManager.swift */; };
+		FC100013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC200013 /* Assets.xcassets */; };
+		FC100014 /* WidgetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200016 /* WidgetHelper.swift */; };
+		FC100015 /* WidgetGuideSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200017 /* WidgetGuideSheet.swift */; };
+		FC100016 /* FortuneCookieAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200018 /* FortuneCookieAttributes.swift */; };
+		FC100017 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200019 /* NotificationManager.swift */; };
+		FC100018 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200020 /* LiveActivityManager.swift */; };
+		FC100019 /* FortunePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200021 /* FortunePresenter.swift */; };
+		FC10001A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200022 /* AppDelegate.swift */; };
+		FC10001B /* FortuneCookieAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200018 /* FortuneCookieAttributes.swift */; };
+		FC10001C /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200019 /* NotificationManager.swift */; };
+		FC10001D /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200020 /* LiveActivityManager.swift */; };
+		FC10001E /* FortunePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200021 /* FortunePresenter.swift */; };
+		FC10001F /* FortuneCookieLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200023 /* FortuneCookieLiveActivity.swift */; };
+		FC100020 /* VideoCookieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200024 /* VideoCookieView.swift */; };
+		FC100028 /* CookieVideoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200028 /* CookieVideoLayout.swift */; };
+		FC100024 /* todays_fortune.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FC200027 /* todays_fortune.mp4 */; };
+		FC10002D /* FortuneShareComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC20002D /* FortuneShareComposer.swift */; };
+		FC100037 /* AppShareConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200037 /* AppShareConfig.swift */; };
+		FC100038 /* SystemShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200038 /* SystemShareManager.swift */; };
+		FC100039 /* DeepLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200039 /* DeepLinkHandler.swift */; };
+		FC10003A /* AppShareConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200037 /* AppShareConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC400001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC000003;
+			remoteInfo = FortuneCookieWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC500001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC10000C /* FortuneCookieWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC200001 /* FortuneCookieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCookieApp.swift; sourceTree = "<group>"; };
+		FC200002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC200003 /* CookieBreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieBreakView.swift; sourceTree = "<group>"; };
+		FC200004 /* CookieShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieShape.swift; sourceTree = "<group>"; };
+		FC200005 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		FC200006 /* CookieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieStore.swift; sourceTree = "<group>"; };
+		FC200007 /* FortuneData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneData.swift; sourceTree = "<group>"; };
+		FC200008 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		FC200009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC20000A /* crack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crack.wav; sourceTree = "<group>"; };
+		FC20000B /* reveal.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reveal.wav; sourceTree = "<group>"; };
+		FC20002E /* rustling_sound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rustling_sound.mp4; sourceTree = "<group>"; };
+		FC20000C /* FortuneCookie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FortuneCookie.entitlements; sourceTree = "<group>"; };
+		FC20000D /* FortuneCookieWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCookieWidgetBundle.swift; sourceTree = "<group>"; };
+		FC20000E /* FortuneCookieWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCookieWidget.swift; sourceTree = "<group>"; };
+		FC20000F /* BreakCookieIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakCookieIntent.swift; sourceTree = "<group>"; };
+		FC200013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC200014 /* FortuneCookieWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FortuneCookieWidget.entitlements; sourceTree = "<group>"; };
+		FC200015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC200016 /* WidgetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetHelper.swift; sourceTree = "<group>"; };
+		FC200017 /* WidgetGuideSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGuideSheet.swift; sourceTree = "<group>"; };
+		FC200018 /* FortuneCookieAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCookieAttributes.swift; sourceTree = "<group>"; };
+		FC200019 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		FC200020 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		FC200021 /* FortunePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunePresenter.swift; sourceTree = "<group>"; };
+		FC200022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC200023 /* FortuneCookieLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCookieLiveActivity.swift; sourceTree = "<group>"; };
+		FC300002 /* FortuneCookie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneCookie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC300001 /* FortuneCookieWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FortuneCookieWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC200024 /* VideoCookieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCookieView.swift; sourceTree = "<group>"; };
+		FC200028 /* CookieVideoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieVideoLayout.swift; sourceTree = "<group>"; };
+		FC200027 /* todays_fortune.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = todays_fortune.mp4; sourceTree = "<group>"; };
+		FC20002D /* FortuneShareComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneShareComposer.swift; sourceTree = "<group>"; };
+		FC200037 /* AppShareConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShareConfig.swift; sourceTree = "<group>"; };
+		FC200038 /* SystemShareManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemShareManager.swift; sourceTree = "<group>"; };
+		FC200039 /* DeepLinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkHandler.swift; sourceTree = "<group>"; };
+		FC200032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC600001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC600002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC700001 = {
+			isa = PBXGroup;
+			children = (
+				FC700002 /* FortuneCookie */,
+				FC700003 /* FortuneCookieWidget */,
+				FC700004 /* Shared */,
+				FC700005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC700002 /* FortuneCookie */ = {
+			isa = PBXGroup;
+			children = (
+				FC200001 /* FortuneCookieApp.swift */,
+				FC200022 /* AppDelegate.swift */,
+				FC200002 /* ContentView.swift */,
+				FC700006 /* Views */,
+				FC700007 /* Services */,
+				FC700008 /* Sounds */,
+				FC700010 /* Videos */,
+				FC200009 /* Assets.xcassets */,
+				FC200032 /* Info.plist */,
+				FC20000C /* FortuneCookie.entitlements */,
+			);
+			path = FortuneCookie;
+			sourceTree = "<group>";
+		};
+		FC700003 /* FortuneCookieWidget */ = {
+			isa = PBXGroup;
+			children = (
+				FC20000D /* FortuneCookieWidgetBundle.swift */,
+				FC20000E /* FortuneCookieWidget.swift */,
+				FC20000F /* BreakCookieIntent.swift */,
+				FC200023 /* FortuneCookieLiveActivity.swift */,
+				FC200013 /* Assets.xcassets */,
+				FC200015 /* Info.plist */,
+				FC200014 /* FortuneCookieWidget.entitlements */,
+			);
+			path = FortuneCookieWidget;
+			sourceTree = "<group>";
+		};
+		FC700004 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FC200006 /* CookieStore.swift */,
+				FC200037 /* AppShareConfig.swift */,
+				FC200007 /* FortuneData.swift */,
+				FC200008 /* HapticManager.swift */,
+				FC200018 /* FortuneCookieAttributes.swift */,
+				FC200019 /* NotificationManager.swift */,
+				FC200020 /* LiveActivityManager.swift */,
+				FC200021 /* FortunePresenter.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FC700005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC300002 /* FortuneCookie.app */,
+				FC300001 /* FortuneCookieWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC700006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC200003 /* CookieBreakView.swift */,
+				FC200028 /* CookieVideoLayout.swift */,
+				FC200004 /* CookieShape.swift */,
+				FC200024 /* VideoCookieView.swift */,
+				FC200017 /* WidgetGuideSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC700007 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FC200005 /* SoundManager.swift */,
+				FC200016 /* WidgetHelper.swift */,
+				FC20002D /* FortuneShareComposer.swift */,
+				FC200038 /* SystemShareManager.swift */,
+				FC200039 /* DeepLinkHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FC700008 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FC20000A /* crack.wav */,
+				FC20000B /* reveal.wav */,
+				FC20002E /* rustling_sound.mp4 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FC700010 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				FC200027 /* todays_fortune.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC000002 /* FortuneCookie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC800003 /* Build configuration list for PBXNativeTarget "FortuneCookie" */;
+			buildPhases = (
+				FC900001 /* Sources */,
+				FC600001 /* Frameworks */,
+				FC900002 /* Resources */,
+				FC500001 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCA00001 /* PBXTargetDependency */,
+			);
+			name = FortuneCookie;
+			packageProductDependencies = (
+			);
+			productName = FortuneCookie;
+			productReference = FC300002 /* FortuneCookie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC000003 /* FortuneCookieWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC800004 /* Build configuration list for PBXNativeTarget "FortuneCookieWidgetExtension" */;
+			buildPhases = (
+				FC900003 /* Sources */,
+				FC600002 /* Frameworks */,
+				FC900004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FortuneCookieWidgetExtension;
+			productName = FortuneCookieWidgetExtension;
+			productReference = FC300001 /* FortuneCookieWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1700;
+				LastUpgradeCheck = 1700;
+				TargetAttributes = {
+					FC000002 = {
+						CreatedOnToolsVersion = 17.0;
+					};
+					FC000003 = {
+						CreatedOnToolsVersion = 17.0;
+					};
+				};
+			};
+			buildConfigurationList = FC800001 /* Build configuration list for PBXProject "FortuneCookie" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ko,
+				Base,
+			);
+			mainGroup = FC700001;
+			packageReferences = (
+			);
+			productRefGroup = FC700005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC000002 /* FortuneCookie */,
+				FC000003 /* FortuneCookieWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC900002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC100009 /* Assets.xcassets in Resources */,
+				FC10000A /* crack.wav in Resources */,
+				FC10000B /* reveal.wav in Resources */,
+				FC10002E /* rustling_sound.mp4 in Resources */,
+				FC100024 /* todays_fortune.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC900004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC100013 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC900001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC100001 /* FortuneCookieApp.swift in Sources */,
+				FC100002 /* ContentView.swift in Sources */,
+				FC100003 /* CookieBreakView.swift in Sources */,
+				FC100028 /* CookieVideoLayout.swift in Sources */,
+				FC100004 /* CookieShape.swift in Sources */,
+				FC100005 /* SoundManager.swift in Sources */,
+				FC100006 /* CookieStore.swift in Sources */,
+				FC100007 /* FortuneData.swift in Sources */,
+				FC100008 /* HapticManager.swift in Sources */,
+				FC100014 /* WidgetHelper.swift in Sources */,
+				FC100015 /* WidgetGuideSheet.swift in Sources */,
+				FC100016 /* FortuneCookieAttributes.swift in Sources */,
+				FC100017 /* NotificationManager.swift in Sources */,
+				FC100018 /* LiveActivityManager.swift in Sources */,
+				FC100019 /* FortunePresenter.swift in Sources */,
+				FC10001A /* AppDelegate.swift in Sources */,
+				FC100020 /* VideoCookieView.swift in Sources */,
+				FC10002D /* FortuneShareComposer.swift in Sources */,
+				FC100037 /* AppShareConfig.swift in Sources */,
+				FC100038 /* SystemShareManager.swift in Sources */,
+				FC100039 /* DeepLinkHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC900003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC10000D /* FortuneCookieWidgetBundle.swift in Sources */,
+				FC10000E /* FortuneCookieWidget.swift in Sources */,
+				FC10000F /* BreakCookieIntent.swift in Sources */,
+				FC100010 /* CookieStore.swift in Sources */,
+				FC10003A /* AppShareConfig.swift in Sources */,
+				FC100011 /* FortuneData.swift in Sources */,
+				FC100012 /* HapticManager.swift in Sources */,
+				FC10001B /* FortuneCookieAttributes.swift in Sources */,
+				FC10001C /* NotificationManager.swift in Sources */,
+				FC10001D /* LiveActivityManager.swift in Sources */,
+				FC10001E /* FortunePresenter.swift in Sources */,
+				FC10001F /* FortuneCookieLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCA00001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC000003 /* FortuneCookieWidgetExtension */;
+			targetProxy = FC400001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FCB00001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FCB00002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCB00003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FortuneCookie/FortuneCookie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKLDHV6VMB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FortuneCookie/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "포츈쿠키";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fortunecookie.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FCB00004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FortuneCookie/FortuneCookie.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKLDHV6VMB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FortuneCookie/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "포츈쿠키";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fortunecookie.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FCB00005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FortuneCookieWidget/FortuneCookieWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKLDHV6VMB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FortuneCookieWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "포츈쿠키";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fortunecookie.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FCB00006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = FortuneCookieWidget/FortuneCookieWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKLDHV6VMB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FortuneCookieWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "포츈쿠키";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fortunecookie.app.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC800001 /* Build configuration list for PBXProject "FortuneCookie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB00001 /* Debug */,
+				FCB00002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC800003 /* Build configuration list for PBXNativeTarget "FortuneCookie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB00003 /* Debug */,
+				FCB00004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC800004 /* Build configuration list for PBXNativeTarget "FortuneCookieWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB00005 /* Debug */,
+				FCB00006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = FC000001 /* Project object */;
+}
