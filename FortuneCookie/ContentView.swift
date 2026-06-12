@@ -9,6 +9,9 @@ struct ContentView: View {
     @State private var personalSlotsUsed = CookieStore.personalSlotsUsed
     @State private var giftSlotsUsed = CookieStore.giftSlotsUsed
     @State private var showRecipientSettings = false
+    #if DEBUG
+    @State private var showResetConfirm = false
+    #endif
 
     var body: some View {
         VStack(spacing: 0) {
@@ -71,6 +74,28 @@ struct ContentView: View {
             CookieStore.resetIfNeeded()
             refreshCounts()
         }
+        #if DEBUG
+        .overlay(alignment: .topTrailing) {
+            Button {
+                showResetConfirm = true
+            } label: {
+                Image(systemName: "arrow.counterclockwise.circle.fill")
+                    .font(.system(size: 28))
+                    .foregroundStyle(.orange.opacity(0.85))
+                    .padding(16)
+            }
+            .confirmationDialog("쿠키 초기화", isPresented: $showResetConfirm) {
+                Button("초기화", role: .destructive) {
+                    CookieStore.debugReset()
+                    refreshCounts()
+                    WidgetCenter.shared.reloadAllTimelines()
+                }
+                Button("취소", role: .cancel) {}
+            } message: {
+                Text("남은 횟수를 모두 초기화할까요?")
+            }
+        }
+        #endif
     }
 
     private func refreshCounts() {

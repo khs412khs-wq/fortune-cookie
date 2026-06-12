@@ -144,7 +144,7 @@ final class CookieVideoContainer: UIView {
     }
 
     @MainActor
-    func makeShareCapture(canvasSize: CGSize, fortune: String? = nil) async -> UIImage? {
+    func makeShareCapture(canvasSize: CGSize, fortune: String? = nil, zoom: CGFloat = CookieVideoLayout.zoom) async -> UIImage? {
         if let fortune, !fortune.isEmpty {
             currentFortuneText = fortune
         }
@@ -171,7 +171,7 @@ final class CookieVideoContainer: UIView {
         let canvas = renderShareCanvas(videoFrame: videoFrame, canvasSize: renderSize)
         return FortuneShareComposer.zoomCrop(
             canvas,
-            zoom: CookieVideoLayout.zoom,
+            zoom: zoom,
             outputSize: renderSize
         )
     }

@@ -512,7 +512,7 @@ struct CookieBreakView: View {
                 container = videoContainer
             }
 
-            let shareImage = await FortuneShareComposer.buildShareImage(
+            let shareImage = await FortuneShareComposer.buildResultShareImage(
                 from: container,
                 canvasSize: canvasSize,
                 fortune: pendingFortune

@@ -246,6 +246,14 @@ enum CookieStore {
         defaults.set(data, forKey: stateKey)
     }
 
+    // MARK: - Debug
+    #if DEBUG
+    static func debugReset() {
+        save(.empty)
+        lastBreakAttemptAt = nil
+    }
+    #endif
+
     static func resetIfNeeded() {
         guard
             let data = defaults.data(forKey: stateKey),
@@ -557,7 +565,7 @@ enum FortuneShareHelper {
     }
 
     static let giftShareHeadline = "HERE IS FORTUNE COOKIE FOR YOU! CRACK IT AND FORTUNE IT !"
-    static let personalShareHeadline = "당신의 포츈쿠키도 궁금하지 않으신가요?🤔😎😍"
+    static let personalShareHeadline = "HOW'S YOUR FORTUNE TODAY?"
     static let soldOutHeadline = "SOLD OUT"
 
     static func giftShareText() -> String {
