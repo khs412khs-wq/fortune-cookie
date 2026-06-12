@@ -29,16 +29,13 @@
 		FC100013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC200013 /* Assets.xcassets */; };
 		FC100014 /* WidgetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200016 /* WidgetHelper.swift */; };
 		FC100015 /* WidgetGuideSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200017 /* WidgetGuideSheet.swift */; };
-		FC100016 /* FortuneCookieAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200018 /* FortuneCookieAttributes.swift */; };
 		FC100017 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200019 /* NotificationManager.swift */; };
 		FC100018 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200020 /* LiveActivityManager.swift */; };
 		FC100019 /* FortunePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200021 /* FortunePresenter.swift */; };
 		FC10001A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200022 /* AppDelegate.swift */; };
-		FC10001B /* FortuneCookieAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200018 /* FortuneCookieAttributes.swift */; };
 		FC10001C /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200019 /* NotificationManager.swift */; };
 		FC10001D /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200020 /* LiveActivityManager.swift */; };
 		FC10001E /* FortunePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200021 /* FortunePresenter.swift */; };
-		FC10001F /* FortuneCookieLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200023 /* FortuneCookieLiveActivity.swift */; };
 		FC100020 /* VideoCookieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200024 /* VideoCookieView.swift */; };
 		FC100028 /* CookieVideoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC200028 /* CookieVideoLayout.swift */; };
 		FC100024 /* todays_fortune.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FC200027 /* todays_fortune.mp4 */; };
@@ -95,12 +92,10 @@
 		FC200015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC200016 /* WidgetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetHelper.swift; sourceTree = "<group>"; };
 		FC200017 /* WidgetGuideSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGuideSheet.swift; sourceTree = "<group>"; };
-		FC200018 /* FortuneCookieAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCookieAttributes.swift; sourceTree = "<group>"; };
 		FC200019 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		FC200020 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
 		FC200021 /* FortunePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortunePresenter.swift; sourceTree = "<group>"; };
 		FC200022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC200023 /* FortuneCookieLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortuneCookieLiveActivity.swift; sourceTree = "<group>"; };
 		FC300002 /* FortuneCookie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FortuneCookie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC300001 /* FortuneCookieWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FortuneCookieWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC200024 /* VideoCookieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCookieView.swift; sourceTree = "<group>"; };
@@ -164,7 +159,6 @@
 				FC20000D /* FortuneCookieWidgetBundle.swift */,
 				FC20000E /* FortuneCookieWidget.swift */,
 				FC20000F /* BreakCookieIntent.swift */,
-				FC200023 /* FortuneCookieLiveActivity.swift */,
 				FC200013 /* Assets.xcassets */,
 				FC200015 /* Info.plist */,
 				FC200014 /* FortuneCookieWidget.entitlements */,
@@ -179,7 +173,6 @@
 				FC200037 /* AppShareConfig.swift */,
 				FC200007 /* FortuneData.swift */,
 				FC200008 /* HapticManager.swift */,
-				FC200018 /* FortuneCookieAttributes.swift */,
 				FC200019 /* NotificationManager.swift */,
 				FC200020 /* LiveActivityManager.swift */,
 				FC200021 /* FortunePresenter.swift */,
@@ -358,7 +351,6 @@
 				FC100008 /* HapticManager.swift in Sources */,
 				FC100014 /* WidgetHelper.swift in Sources */,
 				FC100015 /* WidgetGuideSheet.swift in Sources */,
-				FC100016 /* FortuneCookieAttributes.swift in Sources */,
 				FC100017 /* NotificationManager.swift in Sources */,
 				FC100018 /* LiveActivityManager.swift in Sources */,
 				FC100019 /* FortunePresenter.swift in Sources */,
@@ -382,11 +374,9 @@
 				FC10003A /* AppShareConfig.swift in Sources */,
 				FC100011 /* FortuneData.swift in Sources */,
 				FC100012 /* HapticManager.swift in Sources */,
-				FC10001B /* FortuneCookieAttributes.swift in Sources */,
 				FC10001C /* NotificationManager.swift in Sources */,
 				FC10001D /* LiveActivityManager.swift in Sources */,
 				FC10001E /* FortunePresenter.swift in Sources */,
-				FC10001F /* FortuneCookieLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

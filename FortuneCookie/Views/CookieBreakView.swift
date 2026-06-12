@@ -241,6 +241,7 @@ struct CookieBreakView: View {
             .id(videoSessionID)
             .frame(width: videoSize.width, height: videoSize.height)
             .scaleEffect(CookieVideoLayout.contentScale, anchor: .center)
+            // 시즌 배경색이 적용될 때 비디오의 흰 배경을 배경색에 녹아들게 함
             .allowsHitTesting(false)
 
             Color.clear

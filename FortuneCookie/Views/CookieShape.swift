@@ -44,29 +44,3 @@ struct CookieHalfShape: Shape {
         return path
     }
 }
-
-struct CrumbParticle: Identifiable {
-    let id = UUID()
-    var x: CGFloat
-    var y: CGFloat
-    var size: CGFloat
-    var opacity: Double
-    var rotation: Double
-}
-
-struct CrumbBurstView: View {
-    let particles: [CrumbParticle]
-
-    var body: some View {
-        ZStack {
-            ForEach(particles) { particle in
-                RoundedRectangle(cornerRadius: 1)
-                    .fill(Color(red: 0.85, green: 0.65, blue: 0.25))
-                    .frame(width: particle.size, height: particle.size * 0.6)
-                    .rotationEffect(.degrees(particle.rotation))
-                    .opacity(particle.opacity)
-                    .position(x: particle.x, y: particle.y)
-            }
-        }
-    }
-}

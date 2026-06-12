@@ -7,11 +7,7 @@ enum SystemShareManager {
         fortune: String,
         onComplete: ((Bool) -> Void)? = nil
     ) {
-        let caption = """
-        \(FortuneShareHelper.personalShareText())
-
-        \(AppShareConfig.shareURL.absoluteString)
-        """
+        let caption = buildCaption(headline: FortuneShareHelper.personalShareText())
         presentShare(image: image, caption: caption, onComplete: onComplete)
     }
 
@@ -21,12 +17,14 @@ enum SystemShareManager {
         fortune: String,
         onComplete: ((Bool) -> Void)? = nil
     ) {
-        let caption = """
-        \(FortuneShareHelper.giftShareText())
-
-        \(AppShareConfig.shareURL.absoluteString)
-        """
+        let caption = buildCaption(headline: FortuneShareHelper.giftShareText())
         presentShare(image: image, caption: caption, onComplete: onComplete)
+    }
+
+    /// shareRedirectURL 또는 appStoreURL이 설정된 경우에만 링크 포함
+    private static func buildCaption(headline: String) -> String {
+        let url = AppShareConfig.shareURL
+        return "\(headline)\n\nCLICK HERE TO OPEN OR DOWNLOAD 👇\n\(url.absoluteString)"
     }
 
     @MainActor

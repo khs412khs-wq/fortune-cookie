@@ -246,14 +246,6 @@ enum CookieStore {
         defaults.set(data, forKey: stateKey)
     }
 
-    // MARK: - Debug
-    #if DEBUG
-    static func debugReset() {
-        save(.empty)
-        lastBreakAttemptAt = nil
-    }
-    #endif
-
     static func resetIfNeeded() {
         guard
             let data = defaults.data(forKey: stateKey),

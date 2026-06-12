@@ -5,6 +5,5 @@ import SwiftUI
 struct FortuneCookieWidgetBundle: WidgetBundle {
     var body: some Widget {
         FortuneCookieWidget()
-        FortuneCookieLiveActivity()
     }
 }
