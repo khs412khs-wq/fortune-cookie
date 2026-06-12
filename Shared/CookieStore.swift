@@ -556,7 +556,7 @@ enum FortuneShareHelper {
         "🥠 오늘의 포츈쿠키\n\n\(fortune)\n\n나도 열어보기 👉"
     }
 
-    static let giftShareHeadline = "당신의 포츈쿠키를 열어보세요🎁🎉"
+    static let giftShareHeadline = "HERE IS FORTUNE COOKIE FOR YOU! CRACK IT AND FORTUNE IT !"
     static let personalShareHeadline = "당신의 포츈쿠키도 궁금하지 않으신가요?🤔😎😍"
     static let soldOutHeadline = "SOLD OUT"
 
