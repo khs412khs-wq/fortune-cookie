@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🥠 포츈쿠키</title>
+  <meta property="og:type"         content="website" />
+  <meta property="og:title"        content="🥠 HERE IS FORTUNE COOKIE FOR YOU!" />
+  <meta property="og:description"  content="CRACK IT AND FORTUNE IT ! 오늘의 운세를 부숴보세요." />
+  <meta property="og:image"        content="https://khs412khs-wq.github.io/fortune-cookie/app%20icon.jpg" />
+  <meta property="og:url"          content="https://khs412khs-wq.github.io/fortune-cookie/get" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <script>
+    const DEEP_LINK = "fortunecookie://open";
+    const APP_STORE_URL = "https://apps.apple.com/app/fortunecookie/id6780488176";
+
+    function openAppOrStore() {
+      window.location.href = DEEP_LINK;
+      setTimeout(function () {
+        window.location.href = APP_STORE_URL;
+      }, 1200);
+    }
+
+    window.addEventListener("load", openAppOrStore);
+  </script>
+</head>
+<body>
+  <p>포츈쿠키 앱으로 이동 중이에요...</p>
+  <p><a href="https://apps.apple.com/app/fortunecookie/id6780488176">앱이 열리지 않으면 App Store에서 받기</a></p>
+</body>
+</html>
