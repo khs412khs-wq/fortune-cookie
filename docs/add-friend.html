@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🥠 포츈쿠키 친구 요청</title>
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="🥠 포츈쿠키 친구 요청이 왔어요!" />
+  <meta property="og:description" content="포츈쿠키 앱에서 친구와 함께 오늘의 운세를 깨보세요!" />
+  <meta property="og:image"       content="https://khs412khs-wq.github.io/fortune-cookie/app%20icon.jpg" />
+  <meta property="og:url"         content="https://khs412khs-wq.github.io/fortune-cookie/add-friend" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const uid  = params.get("uid")  || "";
+    const name = params.get("name") || "친구";
+
+    const DEEP_LINK    = "fortunecookie://add-friend?uid=" + encodeURIComponent(uid) + "&name=" + encodeURIComponent(name);
+    const APP_STORE_URL = "https://apps.apple.com/app/fortunecookie/id6780488176";
+
+    function openAppOrStore() {
+      if (!uid) {
+        window.location.href = APP_STORE_URL;
+        return;
+      }
+      window.location.href = DEEP_LINK;
+      setTimeout(function () {
+        // 앱이 열렸다면 이미 포그라운드로 전환됨 → setTimeout은 실행되지 않음
+        // 앱이 없으면 App Store로 이동
+        window.location.href = APP_STORE_URL;
+      }, 1200);
+    }
+
+    window.addEventListener("load", openAppOrStore);
+  </script>
+</head>
+<body style="font-family: -apple-system, sans-serif; text-align: center; padding: 60px 20px; color: #333;">
+  <p style="font-size: 48px;">🥠</p>
+  <p style="font-size: 18px; font-weight: 600;">포츈쿠키 앱으로 이동 중이에요...</p>
+  <p style="margin-top: 32px;">
+    <a href="https://apps.apple.com/app/fortunecookie/id6780488176"
+       style="color: #FF6B00; text-decoration: none; font-size: 15px;">
+      앱이 열리지 않으면 App Store에서 받기
+    </a>
+  </p>
+</body>
+</html>
